@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    to right,
+    rgb(61, 1, 192),
+    rgba(105, 87, 144, 0.745)
+  );
+  padding: 0 10%;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.heading {
+  font-size: 1.5rem;
+  color: #fff;
+  border-left: 5px solid orangered;
+  padding-left: 1.5rem;
+  border-radius: 5px;
+}
+
+.heading span {
+  color: rgb(240, 232, 10);
+}
+
+.calculator {
+  margin-top: 2rem;
+  background: linear-gradient(
+    to right bottom,
+    rgba(141, 90, 249, 0.407),
+    rgba(248, 247, 249, 0.429)
+  );
+  padding: 2rem;
+  border-radius: 8px;
+  display: flex;
+  gap: 20px;
+}
+
+#date__input {
+  font-family: "Poppins", sans-serif;
+  padding: 8px 4px 8px 4px;
+  border-radius: 3px;
+  border: none;
+  flex-basis: 60%;
+}
+
+button {
+  font-family: "Poppins", sans-serif;
+  flex-basis: 30%;
+  background-color: rgb(240, 232, 10);
+  border: none;
+  border-radius: 3px;
+  font-weight: bold;
+  color: rgb(80, 80, 80);
+  cursor: pointer;
+}
+
+.display__date {
+  margin-top: 1.2rem;
+  font-size: 18px;
+  color: #fff;
+}
+
+.display__date span {
+  color: rgb(255, 255, 0);
+}
+
+@media screen and (max-width: 600px) {
+  .heading {
+    font-size: 1.2rem;
+  }
+
+  .calculator {
+    width: 90%;
+  }
+}
